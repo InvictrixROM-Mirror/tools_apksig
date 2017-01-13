@@ -22,3 +22,11 @@ java_binary(
     visibility = ["//visibility:public"],
     deps = [":apksig"],
 )
+
+java_test(
+    name = "ApkUtilsTest",
+    srcs = [
+        "src/test/java/com/android/apksig/apk/ApkUtilsTest.java",
+    ],
+    deps = [":apksig"],
+)
